@@ -1,0 +1,143 @@
+/*
+Theme Name: INZ
+Author: Weronika Grotek
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* nav ul li a:hover{
+	cursor: url('/wp-content/themes/inz/img/cursor.png'), auto;
+	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='450.000000pt' height='450.000000pt' viewBox='0 0 450.000000 450.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,450.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M1569 3916 c-151 -58 -272 -218 -345 -461 -26 -85 -28 -101 -28 -285%0A0 -170 3 -205 22 -272 65 -235 174 -392 317 -459 56 -27 77 -31 142 -31 66 0%0A85 5 148 36 82 40 157 114 214 210 41 69 96 225 112 321 17 102 15 314 -6 409%0A-52 244 -176 438 -331 516 -59 30 -187 38 -245 16z'/%3E%3Cpath d='M2708 3911 c-103 -40 -184 -126 -266 -279 -126 -238 -141 -596 -35%0A-860 95 -238 240 -363 420 -363 62 0 86 5 139 30 159 75 286 279 330 534 22%0A125 15 359 -15 472 -26 99 -106 264 -162 330 -49 59 -130 119 -189 140 -58 21%0A-164 18 -222 -4z'/%3E%3Cpath d='M706 2795 c-213 -82 -269 -396 -129 -721 68 -158 164 -279 281 -355%0A89 -58 154 -81 232 -80 116 0 196 55 251 174 34 72 34 72 33 222 0 137 -3 158%0A-28 235 -53 161 -129 286 -235 388 -126 121 -296 179 -405 137z'/%3E%3Cpath d='M3614 2796 c-198 -62 -374 -264 -459 -526 -37 -113 -46 -296 -20%0A-386 49 -167 133 -243 273 -244 229 -1 481 255 568 576 40 149 26 338 -33 447%0A-66 120 -199 174 -329 133z'/%3E%3Cpath d='M2180 2298 c-30 -17 -97 -60 -149 -96 -292 -199 -486 -410 -606 -657%0A-80 -165 -100 -248 -100 -425 0 -124 3 -156 23 -220 92 -294 378 -445 659%0A-349 69 23 161 79 210 128 l32 33 41 -39 c212 -197 511 -202 714 -12 183 171%0A228 481 115 793 -81 225 -293 486 -551 679 -124 93 -292 197 -317 197 -9 0%0A-41 -14 -71 -32z'/%3E%3C/g%3E%3C/svg%3E%0A"),auto;
+} */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	background-color: bisque;
+	background: url('/wp-content/themes/inz/img/paws-light.png');
+	background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* nagłówek */
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+img.site-logo{
+	width: 180px; 
+	height: 150px; 
+}
+
+.main-menu{
+	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end
+}
+
+.main-menu ul.main-menu__list{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+
+.main-menu a{
+	color: black;
+	text-decoration: none;
+	transition: 0.3s ease;
+	text-transform: uppercase;
+	padding: 12px;
+}
+
+.main-menu a:hover{
+	color: white;
+	background: #9ACD32;
+}
+
+/* stopka  */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.footer__informacja, .footer__otwarcie{
+	flex-basis:25%;
+}
+
+.footer__kontakt a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+	font-size: 17px;
+}
+.footer__kontakt a:hover{
+	color: #9ACD32;
+}
+
+.footer__kontakt .footer__telefon a, .footer__kontakt .footer__email a{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 12px;
+}
+
+.footer__kontakt .footer__telefon img, .footer__kontakt .footer__email img{
+	max-width: 25px;
+	height: 100%;
+}
+
+.footer__kontakt p{
+	margin: 0;
+}
+
+.footer__kontakt .footer__telefon{
+	margin-bottom: 18px;
+
+}
+.footer__logo{
+	display: flex;
+}
+.footer__dni {
+    display: block;
+}
+.footer__godziny {
+    display: block;
+	cursor: pointer;
+}
+.footer__otwarcie .footer__godziny-otwarcia{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer__otwarcie .footer__godziny-otwarcia{
+	border-bottom: 1px solid #9ACD32;
+	padding-bottom: 10px;
+}
+.footer__otwarcie .footer__godziny-otwarcia:not(:last-child){
+	margin-bottom: 12px;
+}
+
+img.footer__site-logo{
+	width: 320px; 
+	height: 250px; 
+}
+.footer__otwarcie .footer__godziny:hover{
+	color: #9ACD32;
+}
