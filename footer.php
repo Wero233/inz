@@ -12,7 +12,7 @@
             <div class="footer__email">
                 <a href="mailto:Schronisko_Koci_Gaj@wp.pl">
                     <img src="<?php echo get_template_directory_uri() . '/img/email.png' ?>" alt="">
-                    Schronisko_Koci_Gaj@wp.pl</a>
+                    Schronisko_Koci_Raj@wp.pl</a>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-
+    <?php wp_footer();  ?>
 
 </footer>
 

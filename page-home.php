@@ -1,7 +1,6 @@
 <?php /* Template: Example Template, powtarzanle na kazdej stronie  */
 get_header();
 ?>
-
 <div class="container">
 
     <div class="blog-header">
