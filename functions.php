@@ -13,3 +13,12 @@ function add_module_to_my_script($tag, $handle, $src)
 
     return $tag;
 }
+
+
+add_action( 'wp_enqueue_scripts', 'style_for_animals' );
+function style_for_animals() {
+
+    if( is_singular( array( 'pies', 'kot' ) ) ) {
+        wp_enqueue_style('single-animal-css', get_template_directory_uri() . '/assets/css/single-animal.css');
+    }
+}

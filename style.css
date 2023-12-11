@@ -401,11 +401,11 @@ img.footer__site-logo{
 
 .front-page__cat-choice:hover .front-page__adoption-text-cat{
 	opacity: 1; /* Po najechaniu myszką, pokaż prostokąt */
-  }
+}
 
 .front-page__dog-choice:hover .front-page__adoption-text-dog{
 	opacity: 1;
- }
+}
 
 
 /* dla tabletów */
@@ -436,21 +436,14 @@ img.footer__site-logo{
 	text-align: center; */
 
 }
+
 .page-kontakt{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	justify-content: center;
 	align-items: flex-start;
-	column-gap: 300px;
-}
-.page-kontakt__contact{
-	display: flex;
-	flex-direction: column;
-	row-gap: 24px;
-	align-items: flex-start;
-	padding-top: 20px;
-
+	column-gap: 100px;
 }
 
 .page-kontakt__contact div a{
@@ -471,21 +464,128 @@ img.footer__site-logo{
 }
 
 .page-kontakt__contact a{
-    color: black;
-    text-decoration: none;
-    transition: 0.3s ease;
+	color: black;
+	text-decoration: none;
+	transition: 0.3s ease;
 	font-size: 17px;
 	margin-left: 35px;
 }
-.page-kontakt__contact a:hover{
-	color: #9ACD32;
+
+
+
+/* TELEFONY */
+
+
+
+	/* obrazek w kontakcie  telefonów*/ 
+.page-kontakt__subtitle{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4,1fr);
+	width: 100%; 
+	height: 100%; 
 }
-.page-kontakt__data h3{
-	font-size: 24px;
+
+.page-kontakt__subtitle .page-kontakt__subtitle-1{
+	color: white;
+	display: block;
+	align-items: center;
+	grid-column: 1/2;
+	grid-row: 2/3;
+	margin-left: 20px;
+	font-size: 32px;
+
+
+} 
+.page-kontakt__subtitle .page-kontakt__subtitle-2{
+	color: white;
+	display: block;
+	align-items: center;
+	font-size: 35px;
+	grid-column: 1/3;
+	grid-row: 3/5;
+	margin-left: 20px;
+	margin-right: 40px;
+
 }
-.page-kontakt__form h3{
-	font-size: 24px;
-}
-.page-kontakt__form form{
-	padding-top: 4px;
+
+/* KOMPUTERY */
+
+
+
+@media screen and (min-width:992px){
+	.page-kontakt{
+		column-gap: 300px;
+	}
+	.page-kontakt__contact{
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		align-items: flex-start;
+		padding-top: 20px;
+	}
+
+
+	.page-kontakt__data h3{
+		font-size: 24px;
+	}
+	.page-kontakt__form h3{
+		font-size: 24px;
+	}
+	.page-kontakt__form form{
+		padding-top: 4px;
+	}
+
+
+	.wpcf7-submit{
+		background-color: #ffffff;
+		color: #9ACD32;;
+		border: 1px solid #9ACD32;;
+		border-radius: 5px;
+		font-size: 17px;
+		padding: 10px;
+		text-decoration: none;
+		transition-duration: 0.4s;
+		text-transform: uppercase;
+		margin:5px 5px;
+		display: inline-block;
+	}
+	/* przycisk w konkatcie */
+
+	.wpcf7-submit:hover, .wpcf7-submit:focus{
+		background-color: #9ACD32;;
+		color: #ffffff;
+		border: 1px solid #9ACD32;;
+	}
+
+	/* obrazek w kontakcie */ 
+	.page-kontakt__subtitle{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(7,1fr);
+	}
+	.page-kontakt__photo{
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+	.page-kontakt__subtitle .page-kontakt__subtitle-1{
+		color: white;
+		display: block;
+		align-items: center;
+		grid-column: 3/5;
+		grid-row: 3/4;
+		margin-left: 120px;
+
+
+	} 
+	.page-kontakt__subtitle .page-kontakt__subtitle-2{
+		color: white;
+		display: block;
+		align-items: center;
+		font-size: 35px;
+		grid-column: 3/5;
+		grid-row: 4/5;
+		margin-left: 120px;
+
+	}
+
 }

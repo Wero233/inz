@@ -31,7 +31,16 @@ get_header();
         ?>
 
     </div>
+
 </section>
+
+<div class='page-kontakt__photo' style="background:url(/wp-content/themes/inz/img/1cat-3038243_1920.jpg)">
+    <!-- <img class='page-kontakt__photo-photo' src="<?php echo get_template_directory_uri(); ?>/img/1cat-3038243_1920.jpg" alt="cat">  -->
+    <div class='page-kontakt__subtitle'>
+        <h1 class="page-kontakt__subtitle-1">Nie przechodź obojętnie!</h1>
+        <h2 class="page-kontakt__subtitle-2">Jeśli widzisz bezdomne zwierze, zadzwoń!</h2>
+    </div>
+</div>
 
 
 <?php get_footer(); ?>
