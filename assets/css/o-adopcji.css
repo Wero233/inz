@@ -1,0 +1,48 @@
+/* na komputer */
+@media screen and (min-width:992px){
+    
+    .page-o-adopcji {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto 0;
+    }
+
+    .page-o-adopcji__rules{
+        padding-left: 20px;
+    }
+
+    
+    .page-o-adopcji__img img {
+        object-fit: cover;
+    }
+
+    .page-o-adopcji__how{
+        text-align: left;
+        font-size: 30px;
+        color: #9ACD32;
+    }
+
+    .page-o-adopcji__rules-2 {
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .page-o-adopcji__rules-2 li {
+        margin-bottom: 10px;
+        list-style-type: decimal; /* Numeracja listy dziesiętna */
+        line-height: 1.5;
+    }
+    .page-o-adopcji__rules-2 ol {
+        margin-left: 20px;   
+    }
+}
+
+ /* na telefon */
+    
+    .page-o-adopcji {
+        padding: 0 24px;
+    }

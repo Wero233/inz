@@ -78,13 +78,13 @@ get_header();
 
     <div class="front-page__choice">
         <div class="front-page__cat-choice">
-            <a href="/koty-do-adopcji">
+            <a href="//weronika-g-inzynierka.test/kot/">
                 <img src="/wp-content/themes/inz/img/1cat-3038247_1280.jpg" alt="cat">
                 <h2 class="front-page__adoption-text-cat">Koty do adopcji</h2>
             </a>
         </div>
         <div class="front-page__dog-choice">
-            <a href="/psy-do-adopcji">
+            <a href="//weronika-g-inzynierka.test/pies/">
                 <img src="/wp-content/themes/inz/img/1labrador-retriever-1210559_1280.jpg" alt="dog" href="/psy do adopcji/">
                 <h2 class="front-page__adoption-text-dog">Psy do adopcji</h2>
             </a>

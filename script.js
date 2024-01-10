@@ -40,4 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initial check on page load
     handleScroll();
+
+    let button = document.querySelector('.animal__button');
+    if(button){
+        button.addEventListener('click', function(){
+            var panel = document.getElementById('adoptionForm');
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        })
+    }
+    
 });
+

@@ -1,3 +1,149 @@
-.animal{
-    color: red;
+/* koty i psy - telefony */
+.animal__guidelines{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.animal__title{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #f0f8e0;
+    padding: 30px;
+
+}
+
+.animal__button{
+    background-color: #9ACD32;;
+    color:  #ffffff;
+    border: 1px solid #9ACD32;;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    margin:5px 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.animal__button:hover, .animal__button:focus{
+    background-color: #ffffff;
+    color: #9ACD32; 
+    border: 1px solid #9ACD32;;
+}
+.animal__description{
+    font-size: 28px;
+}
+.animal__paw{
+    width: 40px;
+    height: 40px;
+
+}
+h6{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-size: 16px;
+}
+/* castom folmularz  */
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #9ACD32;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #9ACD32;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #9ACD32;
+}
+
+
+/* koty i psy - komputery */
+
+@media screen and (min-width:992px){
+    .animal{
+        padding: 0px;
+        max-width:1160px ;
+        margin: 0 auto;
+    }
+    .animal__guidelines{
+        row-gap: 0;
+        column-gap: 20px;
+		flex-direction: row;
+        justify-content: center;
+        align-items: unset;
+    }
+    .animal__img{
+        width: 600px;
+        height: 400px;
+    }
+    .animal__img--wrapper{
+        flex: 7;
+    }
+    .animal__info{
+        flex: 5;
+    }
+
+    .animal__info{
+        font-size: 24px;
+		padding-top: 20px;
+    }
+    /* .animal__title{
+
+    } */
+    .animal__paw{
+        width: 30px;
+        height: 30px;
+        
+    }
+    h6{
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+    }
+    
+
+
+
+
+
+    .wpcf7-form input[type='text'], .wpcf7-form input[type='email'], .wpcf7-form input[type='tel']{
+        margin-bottom: 12px;
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 20px auto;
+    }   
+
+        .panel {
+        display: none;
+        padding: 10px;
+        background-color: #f1f1f1;
+        }
+
 }

@@ -1,0 +1,38 @@
+/* ARCHIWUM -  komputer */
+.archive a{
+    background-color: #9ACD32;
+    color:  #ffffff;
+    border: 1px solid #9ACD32;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.archive a:hover, .archive a:focus{
+    background-color: #ffffff;
+    color: #9ACD32; 
+    border: 1px solid #9ACD32;
+}
+
+@media screen and (min-width:992px){
+    .archive{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap:32px;
+        grid-row-gap: 32px;
+    }
+    .archive__img{
+        display: flex;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .archive__img img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+}

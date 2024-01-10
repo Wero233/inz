@@ -22,7 +22,7 @@
         <ul class="main-menu__list">
             <li><a href="<?php echo get_post_type_archive_link('kot') ?>">Koty</a></li>
             <li><a href="<?php echo get_post_type_archive_link('pies') ?>">Psy</a></li>
-            <li><a href="<?php echo get_bloginfo('dodaj') ?>">Dodaj ogłoszenie</a></li>
+            <li><a href="<?php echo get_permalink( get_page_by_path( 'o-adopcji' ) );?>">O adopcji</a></li>
             <li><a href="<?php echo get_permalink( get_page_by_path( 'kontakt' ) );?>">Kontakt</a></li>
         </ul>
     </nav>
