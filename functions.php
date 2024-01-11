@@ -20,12 +20,12 @@ add_action( 'wp_enqueue_scripts', 'style_for_animals' );
 function style_for_animals() {
 
     if( is_singular( array( 'pies', 'kot' ) ) ) {
-        wp_enqueue_style('single-animal-css', get_template_directory_uri() . '/assets/css/single-animal.css');
+        wp_enqueue_style('single-animal-css', get_template_directory_uri() . '/assets/css/single-animal.css',[], filemtime(get_template_directory() . '/assets/css/single-animal.css'));
     }
     if (is_post_type_archive(array('pies', 'kot'))) {
-        wp_enqueue_style('archive-animal-css', get_template_directory_uri() . '/assets/css/archive-animal.css');
+        wp_enqueue_style('archive-animal-css', get_template_directory_uri() . '/assets/css/archive-animal.css', [], filemtime(get_template_directory() . '/assets/css/archive-animal.css'));
     }
     if (is_page('o-adopcji')) {
-        wp_enqueue_style('o-adopcji-css', get_template_directory_uri() . '/assets/css/o-adopcji.css');
+        wp_enqueue_style('o-adopcji-css', get_template_directory_uri() . '/assets/css/o-adopcji.css',[], filemtime(get_template_directory() . '/assets/css/o-adopcji.css'));
     }
 }

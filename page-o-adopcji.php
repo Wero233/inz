@@ -14,14 +14,15 @@
         <div class="page-o-adopcji__rules-2">
             <ol>
                 <li>Osoba składająca wniosek o adopcję musi być pełnoletnia.</li>
-                <li>Konieczne jest przedstawienie dowodu tożsamości oraz dokumentacji potwierdzającej miejsce zamieszkania.</li>
+                <li> Należy wypełnić winosek adopcyjny znajdujący się na stronie schroniska. </li>
                 <li>Wniosek o adopcję podlega zatwierdzeniu przez personel schroniska.</li>
-                <li>Przyszli opiekunowie muszą skonsultować się telefonicznie bądź stawić się bezpośrednio w schronisku,
+                <li>Na osobistym spotkaniu konieczne jest przedstawienie dowodu tożsamości oraz dokumentacji potwierdzającej miejsce zamieszkania.</li>
+                <li>Przyszli opiekunowie muszą stawić się bezpośrednio w schronisku,
                     aby przystąpić do wywiadu adopcyjnego, który obejmuje pytania dotyczące doświadczenia związanego z opieką nad zwierzętami,
                     warunków mieszkalnych, planów pielęgnacji oraz zasobów finansowych. </li>
                 <li>Adoptujący zobowiązują się do zapewnienia zwierzęciu odpowiedniej opieki, w tym regularnych wizyt u weterynarza, odpowiedniej diety, aktywności fizycznej i miłości.</li>
-                <li>Schronisko oferuje wsparcie po adopcji, udzielając porad dotyczących pielęgnacji, zachowań i wszelkich pytań związanych z opieką nad zwierzęciem.</li>
             </ol>
+            Schronisko oferuje wsparcie po adopcji, udzielając porad dotyczących pielęgnacji, zachowań i wszelkich pytań związanych z opieką nad zwierzęciem.
         </div>
 
     </div>

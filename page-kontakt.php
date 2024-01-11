@@ -16,7 +16,7 @@ get_header();
                     <span>Schronisko_Koci_Raj@wp.pl</span></a>
             </div>
             <div class="page-kontakt__point">
-                <a href="addres:Radom ul.Radosna">
+                <a target="blank" href="https://www.google.com/maps/place/Radosna,+26-605+Radom/data=!4m2!3m1!1s0x4718592a6f1d8507:0x4ad381b637dc8272?sa=X&ved=2ahUKEwjk6szzp9aDAxWIFBAIHTNCBf4Q8gF6BAgWEAA">
                     <img src="<?php echo get_template_directory_uri() . '/img/point1.png' ?>" alt="">
                     <span>Radom ul.Radosna </span></a>
             </div>
@@ -35,7 +35,6 @@ get_header();
 </section>
 
 <div class='page-kontakt__photo' style="background:url(/wp-content/themes/inz/img/1cat-3038243_1920.jpg)">
-    <!-- <img class='page-kontakt__photo-photo' src="<?php echo get_template_directory_uri(); ?>/img/1cat-3038243_1920.jpg" alt="cat">  -->
     <div class='page-kontakt__subtitle'>
         <h1 class="page-kontakt__subtitle-1">Nie przechodź obojętnie!</h1>
         <h2 class="page-kontakt__subtitle-2">Jeśli widzisz bezdomne zwierze, zadzwoń!</h2>

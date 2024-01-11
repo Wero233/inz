@@ -1,14 +1,8 @@
 /*
 Theme Name: INZ
 Author: Weronika Grotek
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-/* nav ul li a:hover{
-	cursor: url('/wp-content/themes/inz/img/cursor.png'), auto;
-	cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='450.000000pt' height='450.000000pt' viewBox='0 0 450.000000 450.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,450.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M1569 3916 c-151 -58 -272 -218 -345 -461 -26 -85 -28 -101 -28 -285%0A0 -170 3 -205 22 -272 65 -235 174 -392 317 -459 56 -27 77 -31 142 -31 66 0%0A85 5 148 36 82 40 157 114 214 210 41 69 96 225 112 321 17 102 15 314 -6 409%0A-52 244 -176 438 -331 516 -59 30 -187 38 -245 16z'/%3E%3Cpath d='M2708 3911 c-103 -40 -184 -126 -266 -279 -126 -238 -141 -596 -35%0A-860 95 -238 240 -363 420 -363 62 0 86 5 139 30 159 75 286 279 330 534 22%0A125 15 359 -15 472 -26 99 -106 264 -162 330 -49 59 -130 119 -189 140 -58 21%0A-164 18 -222 -4z'/%3E%3Cpath d='M706 2795 c-213 -82 -269 -396 -129 -721 68 -158 164 -279 281 -355%0A89 -58 154 -81 232 -80 116 0 196 55 251 174 34 72 34 72 33 222 0 137 -3 158%0A-28 235 -53 161 -129 286 -235 388 -126 121 -296 179 -405 137z'/%3E%3Cpath d='M3614 2796 c-198 -62 -374 -264 -459 -526 -37 -113 -46 -296 -20%0A-386 49 -167 133 -243 273 -244 229 -1 481 255 568 576 40 149 26 338 -33 447%0A-66 120 -199 174 -329 133z'/%3E%3Cpath d='M2180 2298 c-30 -17 -97 -60 -149 -96 -292 -199 -486 -410 -606 -657%0A-80 -165 -100 -248 -100 -425 0 -124 3 -156 23 -220 92 -294 378 -445 659%0A-349 69 23 161 79 210 128 l32 33 41 -39 c212 -197 511 -202 714 -12 183 171%0A228 481 115 793 -81 225 -293 486 -551 679 -124 93 -292 197 -317 197 -9 0%0A-41 -14 -71 -32z'/%3E%3C/g%3E%3C/svg%3E%0A"),auto;
-} */
 
 body {
 	-moz-osx-font-smoothing: grayscale;
@@ -18,19 +12,19 @@ body {
 	background-repeat: repeat;
     background-attachment: fixed;
 			font-family: 'Source Sans 3', sans-serif;
-	
+	margin: 0;
 }
 
 /* STRONA :nagłówek */
 header{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	padding: 10px;
+	flex-wrap: wrap;
 	text-align: center;
-	font-size: 20px;
-	margin-left: 35px;
-	margin-right: 35px;
+	margin: 0 0 20px;
 }
 
 img{
@@ -55,7 +49,7 @@ img.site-logo{
 	padding: 0;
 	display: flex;
 	flex-direction: row;
-	column-gap: 20px;
+	column-gap: 10px;
 }
 
 .main-menu a{
@@ -64,6 +58,7 @@ img.site-logo{
 	transition: 0.3s ease;
 	text-transform: uppercase;
 	padding: 12px;
+	font-size: 14px;
 }
 
 .main-menu a:hover{
@@ -71,35 +66,62 @@ img.site-logo{
 	background: #9ACD32;
 }
 
+@media screen and (min-width:992px) {
+	header{
+		flex-wrap: no-wrap;
+		flex-direction: row;
+		margin: 0 35px 20px;
+	}
+
+	img.site-logo{
+		width: 190px; 
+		height: 160px; 
+	}
+
+	
+	.main-menu ul.main-menu__list{
+		column-gap: 20px;
+	}
+
+
+	.main-menu a{
+	font-size: 20px ;
+	}
+
+}
+
 /* STRONA:  stopka  */
+
+
 .footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
+	background-color: #f8f8f8;
+	padding: 20px;
+	text-align: center;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-grow: 1;
+	flex-direction: column; 
+	align-items: center; 
 	margin-top: 60px;
 }
 
-.footer__informacja, .footer__otwarcie{
-	flex-basis:25%;
+.footer__informacja, .footer__otwarcie {
+	flex-basis: 100%; 
 }
 
-.footer__kontakt a{
-    color: black;
-    text-decoration: none;
-    transition: 0.3s ease;
+.footer__kontakt a {
+	color: black;
+	text-decoration: none;
+	transition: 0.3s ease;
 	font-size: 17px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	margin-left: 35px;
 }
-.footer__kontakt a:hover{
+
+.footer__kontakt a:hover {
 	color: #9ACD32;
 }
 
-.footer__kontakt .footer__telefon a, .footer__kontakt .footer__email a{
+.footer__kontakt .footer__telefon a,
+.footer__kontakt .footer__email a {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -107,25 +129,24 @@ img.site-logo{
 	column-gap: 12px;
 }
 
-.footer__kontakt .footer__telefon img, .footer__kontakt .footer__email img{
+.footer__kontakt .footer__telefon img,
+.footer__kontakt .footer__email img {
 	max-width: 25px;
 	height: 100%;
 }
 
-.footer__kontakt p{
+.footer__kontakt p {
 	margin: 0;
 }
 
-.footer__kontakt .footer__telefon{
+.footer__kontakt .footer__telefon {
 	margin-bottom: 18px;
-
 }
-.footer__logo{
+
+.footer__logo {
 	display: flex;
 }
-.footer__dni {
-    display: block;
-}
+
 .footer__godziny {
     display: block;
 	cursor: pointer;
@@ -143,13 +164,35 @@ img.site-logo{
 	margin-bottom: 12px;
 }
 
-img.footer__site-logo{
-	width: 320px; 
-	height: 250px; 
-}
 .footer__otwarcie .footer__godziny:hover{
 	color: #9ACD32;
 }
+
+
+
+	img.footer__site-logo{
+	width: 270px; 
+	height: auto; 
+}
+
+.footer__otwarcie .footer__godziny:hover {
+	color: #9ACD32;
+}
+
+@media screen and (min-width: 992px) {
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.footer__informacja,
+	.footer__otwarcie {
+		flex-basis: 25%;
+	}
+}
+
+
 
 
 /* Strona: GŁÓWNA  */
@@ -196,9 +239,6 @@ img.footer__site-logo{
 	display: block;
     align-items: center;
 	font-size: 35px;
-	/* grid-column: 1/2;
-    grid-row: 3/4;
-    margin-left: 100px; */
 } 
 
 /* 2 obrazek */
@@ -221,7 +261,6 @@ img.footer__site-logo{
 } 
 .hero-slider__wrapper-2 .hero-slider__subtitle-2{
 	color: #171513;
-	/* color: #546c77; */
 	display: block;
     align-items: center;
 	font-size: 35px;
@@ -268,40 +307,29 @@ img.footer__site-logo{
 .front-page__info{
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	padding: 20px;
 	column-gap:30px
 }
 
 .front-page__description{
-	
 	font-size: 20px;
 	display: flex;
 	flex: 1;
 	text-align: center;
-	padding-top: 100px;
-	padding-left: 16px;
 	font-weight: lighter;
 	flex-direction: column;
 }
 
 .front-page__photo-description{
-	display: flex;
-	flex: 1;
-	justify-content: flex-start;
 	padding-top: 20px;
 	padding-bottom: 75px;
 	margin: 0 auto;
 }
 
 .front-page__photo-description img{
-
 	max-width: 100%;
 	width: 500px;
 }
-/* .front-page__description h1{
-	color:#9ACD32;
-
-} */
 .front-page__all-2{
 	background: url(/wp-content/themes/inz/img/lapki3.png);
 	padding: 40px;
@@ -313,8 +341,7 @@ img.footer__site-logo{
 
 }
 /* klasa do zdjecia wyłaniającego się */
-.hideme
-{
+.hideme {
     opacity:0;
 	transition: opacity 1.5s ease;
 }
@@ -325,16 +352,18 @@ img.footer__site-logo{
 }
 .front-page__panel{
 	display: flex;
-	margin-left: 150px;
+	align-items: center;
+	margin-left: 0;
+	justify-content: center;
 }
 .front-page__paw img{
-	height: 150px;
-	max-width: 150px;
+	height: auto;
+	max-width: 75px;
 	object-fit: contain;
 }
 .front-page__friend h1{
 	color: #9ACD32;
-	font-size: 100px;
+	font-size: 42px;
 	margin: 0;
 	line-height: 1;
 	letter-spacing: 5px;
@@ -342,10 +371,31 @@ img.footer__site-logo{
 }
 .front-page__friend h2{
 	font-weight: 100;
-	font-size: 50px;
+	font-size: 25px;
 	/* font-style: italic; */
 	margin: 0;
 	line-height: 1;
+}
+
+@media screen and (min-width:992px) {
+	.front-page__friend h1{
+		font-size: 100px;
+		line-height: 1;
+		letter-spacing: 5px;
+	
+	}
+	.front-page__friend h2{
+		font-weight: 100;
+		font-size: 50px;
+		margin: 0;
+		line-height: 1;
+	}
+
+	.front-page__paw img{
+		height: 150px;
+		max-width: 150px;
+
+	}
 }
 
 
@@ -361,11 +411,8 @@ img.footer__site-logo{
 .front-page__choice{
 	display: flex;
 	flex-direction: row;
-	column-gap: 150px;
-	max-width: 900px;
-	margin: 0 auto;
-	position: relative;
-	margin-top: 45px;
+	column-gap: 24px;
+	margin: 45px auto 0;
 }
 
 .front-page__choice img{
@@ -384,23 +431,23 @@ img.footer__site-logo{
 }
 
 .front-page__adoption-text-cat, .front-page__adoption-text-dog{
-	width: 100%; /* Szerokość prostokąta */
+	width: 100%; 
 	margin: 0;
 	display: block;
-	height: 50px; /* Wysokość prostokąta */
-	background-color: rgba(0, 0, 0, 0.7); /* Kolor tła z przezroczystością */
-	color:#9ACD32; /* Kolor tekstu */
-	text-align: center; /* Wyśrodkowanie tekstu */
-	line-height: 50px; /* Wyrównanie tekstu w pionie (również równa wysokość prostokąta) */
-	position: absolute; /* Ustawienie na absolute, aby można było dowolnie pozycjonować */
-	bottom: 0; /* Odległość od dołu */
-	left: 0; /* Odległość od lewej strony */
-	opacity: 0; /* Początkowo ukryj prostokąt */
+	height: 50px; 
+	background-color: rgba(0, 0, 0, 0.7); 
+	color:#9ACD32; 
+	text-align: center; 
+	line-height: 50px; 
+	position: absolute; 
+	bottom: 0; 
+	left: 0; 
+	opacity: 0; 
 	transition: opacity 0.3s ease-in-out;
 }
 
 .front-page__cat-choice:hover .front-page__adoption-text-cat{
-	opacity: 1; /* Po najechaniu myszką, pokaż prostokąt */
+	opacity: 1; 
 }
 
 .front-page__dog-choice:hover .front-page__adoption-text-dog{
@@ -410,12 +457,18 @@ img.footer__site-logo{
 
 /* dla tabletów */
 @media screen and (min-width:992px){
+	.front-page__choice{
+		max-width: 900px;
+		column-gap: 150px;
+		position: relative;
+	}
+	
 	.front-page__info{
 		flex-direction: row;
-		object-fit: cover;
-	}
-	.front-page__description{
-		padding-left: 250px;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 1320px;
 	}
 	.front-page__photo-description{
 		max-width: 50%;
@@ -430,20 +483,13 @@ img.footer__site-logo{
 	box-shadow: 0 0 12px #9ACD32; 
 }
 
-.page-kontakt__form{
-	/* display: block;
-	margin:0 auto;
-	text-align: center; */
-
-}
-
 .page-kontakt{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
 	justify-content: center;
-	align-items: flex-start;
-	column-gap: 100px;
+	align-items: center;
+	row-gap: 24px;
 }
 
 .page-kontakt__contact div a{
@@ -469,6 +515,21 @@ img.footer__site-logo{
 	transition: 0.3s ease;
 	font-size: 17px;
 	margin-left: 35px;
+	margin-bottom: 12px;
+	
+}
+
+.page-kontakt__contact a:hover{
+	color:#9ACD32;
+}
+
+@media screen and (min-width:992px) {
+	.page-kontakt{
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		column-gap: 100px;
+	}
 }
 
 
